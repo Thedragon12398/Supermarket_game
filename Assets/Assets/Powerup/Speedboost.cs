@@ -4,13 +4,26 @@ using UnityEngine;
 
 public class Speedboost : MonoBehaviour
 {
-    public float multiplier = 1.5f;
-    private void OnTriggerEnter(Collider other)
+    private void Start()
     {
-        if(other.name == "Player")
+
+    }
+
+    public float multiplier = 20.0f;
+    public Camera cameraFov;
+
+    private void OnTriggerEnter (Collider other)
+    {
+        if (other.name == "Player")
         {
-            .Speed *= 1.5f;
+           
+            CharacterMovement.runSpeed = multiplier;    
             Destroy(gameObject);
         }
     }
+
+
+
+
+
 }

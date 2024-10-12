@@ -8,12 +8,12 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Ground
+  - whatIsGround
   - Water
   - UI
   - Shopping shelves
-  - 
-  - 
+  - whatIsPlayer
+  - whatIsEnemy
   - 
   - 
   - 

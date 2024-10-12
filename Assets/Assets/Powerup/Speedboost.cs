@@ -4,26 +4,33 @@ using UnityEngine;
 
 public class Speedboost : MonoBehaviour
 {
-    private void Start()
-    {
+    public enum SpeedBoost { Speed }
+    public SpeedBoost speedboost;
 
+    public float AmountToGive;
+
+    private CharacterMovement Player;
+
+    private void Awake()
+    {
+        Player = Object.FindFirstObjectByType<CharacterMovement>();
     }
 
-    public float multiplier = 20.0f;
-    public Camera cameraFov;
-
-    private void OnTriggerEnter (Collider other)
+    private void OnTriggerEnter(Collider Collision)
     {
-        if (other.name == "Player")
+        if (Collision.gameObject.tag == "Player")
         {
-           
-            CharacterMovement.runSpeed = multiplier;    
+            switch (speedboost)
+            {
+                case SpeedBoost.Speed:
+                    Player.walkSpeed += AmountToGive;
+                    break;
+                default:
+                    break;
+            }
+
             Destroy(gameObject);
         }
     }
-
-
-
-
 
 }

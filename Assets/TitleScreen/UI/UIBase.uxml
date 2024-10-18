@@ -1,0 +1,6 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/TitleScreen/UI/BaseUI.uss?fileID=7433441132597879392&amp;guid=91ae65e579162974ba1e59ce1fbc24b3&amp;type=3#BaseUI" />
+    <engine:VisualElement name="Container" class="header">
+        <engine:Label text="Test Title" class="header" />
+    </engine:VisualElement>
+</engine:UXML>

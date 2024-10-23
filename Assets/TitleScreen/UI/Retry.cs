@@ -6,7 +6,7 @@ using UnityEngine.UIElements;
 
 public class Retry : MonoBehaviour
 {
-    public void OnButtonClick(ClickEvent evt)
+    public void LoadGame()
     {
         SceneManager.LoadScene("MainScene");
     }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class EnemyAI : MonoBehaviour
 {
@@ -105,11 +106,13 @@ public class EnemyAI : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider Col)
     {
-        if (collision.gameObject.tag == "whatIsPlayer")
+        if (Col.gameObject.tag == "Enemy")
         {
-            Destroy(collision.gameObject);
+            SceneManager.LoadScene("Death Scene");
+            Debug.Log("Player is hit");
         }
+       
     }
 }

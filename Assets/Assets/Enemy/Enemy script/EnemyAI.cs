@@ -105,14 +105,5 @@ public class EnemyAI : MonoBehaviour
     {
         Destroy(gameObject);
     }
-
-    private void OnTriggerEnter(Collider Col)
-    {
-        if (Col.gameObject.tag == "Enemy")
-        {
-            SceneManager.LoadScene("Death Scene");
-            Debug.Log("Player is hit");
-        }
-       
-    }
+      
 }

@@ -7,7 +7,17 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Body
+    second: {fileID: 2100000, guid: acb711d3952456d4d8a572b84744bb84, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Metal_Knife
+    second: {fileID: 2100000, guid: 754e38fc0017d54438de4659f1f5328c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: standardSurface1
     second: {fileID: 2100000, guid: 754e38fc0017d54438de4659f1f5328c, type: 2}
   materials:
     materialImportMode: 2

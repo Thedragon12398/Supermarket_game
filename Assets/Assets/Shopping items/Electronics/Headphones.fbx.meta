@@ -3,7 +3,37 @@ guid: cc59a766c8296e043abefbb662ee916d
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Arch
+    second: {fileID: 2100000, guid: 9d07bbfcac714c24ca9caaf473819cb8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cushion
+    second: {fileID: 2100000, guid: e23d39fb2e4371e4197ca2fac30d04f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Red_casing
+    second: {fileID: 2100000, guid: 1ec8dce909ec3c24c9a1d3d0fe30b52a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Speaker
+    second: {fileID: 2100000, guid: ab745ab891d28c34d8b73e9067ffa8ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal
+    second: {fileID: 2100000, guid: 8d435d0e49f66b24fa2481c32db9726b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: outer_inside
+    second: {fileID: 2100000, guid: 3501be996053f4646b21943247a4e769, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

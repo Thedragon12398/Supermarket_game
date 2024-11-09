@@ -20,13 +20,13 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 1, g: 0.13396227, b: 0.2348023, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0, g: 0, b: 0, a: 1}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 7a6c18e4b8af0ec448cafb1a6b1530d8, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -339,6 +339,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Melee
       objectReference: {fileID: 0}
+    - target: {fileID: 4985817901633898724, guid: d0cd97321cdd15e4c8476ab0c36dced9, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7700899557813049323, guid: d0cd97321cdd15e4c8476ab0c36dced9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -606,9 +610,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8513424388201257645, guid: c5183194cdcdca042bc5100671275b6d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -3957782524123411102, guid: c5183194cdcdca042bc5100671275b6d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c5183194cdcdca042bc5100671275b6d, type: 3}
       propertyPath: m_Name
       value: Toy enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c5183194cdcdca042bc5100671275b6d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c5183194cdcdca042bc5100671275b6d, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -682,8 +702,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.14796944, y: 0.13146181, z: 0.15346427}
+  m_Center: {x: -0.0017650359, y: 0.011590167, z: -0.004750417}
 --- !u!114 &1313550294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -707,9 +727,9 @@ MonoBehaviour:
   health: 0
   walkPoint: {x: 50, y: 50, z: 0}
   walkPointRange: 25.05
-  timeBetweenAttacks: 0
+  timeBetweenAttacks: 14.45
   Melee: {fileID: 490395659}
-  sightRange: 100
+  sightRange: 500
   attackRange: 1
   playerInSightRange: 1
   playerInAttackRange: 0
@@ -723,7 +743,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 100
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -774,7 +794,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!4 &1313550298 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c5183194cdcdca042bc5100671275b6d, type: 3}
@@ -1047,9 +1067,13 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4931613761908009284, guid: 217da2afeefc26a4dba8340e1bf2cd17, type: 3}
+      propertyPath: walkSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6386386040673655752, guid: 217da2afeefc26a4dba8340e1bf2cd17, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -140.4
+      value: -298.8
       objectReference: {fileID: 0}
     - target: {fileID: 6386386040673655752, guid: 217da2afeefc26a4dba8340e1bf2cd17, type: 3}
       propertyPath: m_LocalPosition.y

@@ -13,4 +13,13 @@ public class PlayerCollision : MonoBehaviour
             SceneManager.LoadScene("Death Scene");
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.transform.tag == "Exit")
+        {
+            Debug.Log("switching to chase scene");
+            SceneManager.LoadScene("Escape");
+        }
+    }
 }

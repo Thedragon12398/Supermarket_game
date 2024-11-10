@@ -7,6 +7,7 @@ public class CollectableFruitScript : MonoBehaviour
 
     [SerializeField] private Animator doorAnimation;
 
+    
     public int Fruits; /// storing collected fruits
     // Start is called before the first frame update
     void Start()
@@ -21,19 +22,14 @@ public class CollectableFruitScript : MonoBehaviour
             Fruits = Fruits + 1;
             ///Col.gameObject.SetActive(false);
             Destroy(Col.gameObject);
+           
         }
     }
 
-    public void openDoors()
-    {
-        if (Fruits == 0)
-        {
-            doorAnimation.SetBool("Open Sesame", true);
-        }
-    }
+    
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
 }

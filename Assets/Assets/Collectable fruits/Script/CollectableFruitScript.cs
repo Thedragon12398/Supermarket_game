@@ -9,11 +9,12 @@ public class CollectableFruitScript : MonoBehaviour
 
     
     public int Fruits; /// storing collected fruits
-    public GameObject TriggerObj;
+    public GameObject SecondDoor;
+    public GameObject FirstDoor;
     // Start is called before the first frame update
     void Start()
     {
-        TriggerObj.gameObject.SetActive(false);
+        SecondDoor.gameObject.SetActive(false);
     }
     public void OnTriggerEnter(Collider Col)
     {
@@ -28,7 +29,12 @@ public class CollectableFruitScript : MonoBehaviour
 
         if(Fruits >= 1)
         {
-            TriggerObj.gameObject.SetActive(true);
+            SecondDoor.gameObject.SetActive(true);
+            FirstDoor.gameObject.SetActive(false);
+        }
+        else
+        {
+            FirstDoor.gameObject.SetActive(true);
         }
     }
 

@@ -18,6 +18,13 @@ public class PlayerCollision : MonoBehaviour
             Debug.Log("You win");
             SceneManager.LoadScene("You win");
         }
+
+        if(col.transform.tag == "Exit")
+        {
+            Debug.Log("I'm Free!");
+            SceneManager.LoadScene("Escape");
+            
+        }
     }
 
    

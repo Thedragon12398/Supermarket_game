@@ -255,7 +255,7 @@ GameObject:
   - component: {fileID: 410296598}
   m_Layer: 0
   m_Name: Way out
-  m_TagString: Untagged
+  m_TagString: Way out
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

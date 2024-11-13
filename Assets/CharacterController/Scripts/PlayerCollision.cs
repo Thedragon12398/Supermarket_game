@@ -12,14 +12,13 @@ public class PlayerCollision : MonoBehaviour
             Debug.Log("Game Over");
             SceneManager.LoadScene("Death Scene");
         }
-    }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.transform.tag == "Exit")
+        if(col.transform.tag == "Way out")
         {
-            Debug.Log("switching to chase scene");
-            SceneManager.LoadScene("Escape");
+            Debug.Log("You win");
+            SceneManager.LoadScene("You win");
         }
     }
+
+   
 }

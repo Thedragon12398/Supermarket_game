@@ -5,14 +5,15 @@ using UnityEngine;
 public class CollectableFruitScript : MonoBehaviour
 {
 
-    [SerializeField] private Animator doorAnimation;
+    
 
     
     public int Fruits; /// storing collected fruits
+    public GameObject TriggerObj;
     // Start is called before the first frame update
     void Start()
     {
-        
+        TriggerObj.gameObject.SetActive(false);
     }
     public void OnTriggerEnter(Collider Col)
     {
@@ -23,6 +24,11 @@ public class CollectableFruitScript : MonoBehaviour
             ///Col.gameObject.SetActive(false);
             Destroy(Col.gameObject);
            
+        }
+
+        if(Fruits >= 1)
+        {
+            TriggerObj.gameObject.SetActive(true);
         }
     }
 

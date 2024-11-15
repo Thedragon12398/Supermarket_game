@@ -27,7 +27,7 @@ public class CollectableFruitScript : MonoBehaviour
            
         }
 
-        if(Fruits >= 14)
+        if(Fruits >= 1)
         {
             SecondDoor.gameObject.SetActive(true);
             FirstDoor.gameObject.SetActive(false);

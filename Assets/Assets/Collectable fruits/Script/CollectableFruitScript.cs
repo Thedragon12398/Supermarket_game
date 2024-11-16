@@ -22,12 +22,12 @@ public class CollectableFruitScript : MonoBehaviour
         {
             Debug.Log("Fruit is collected!");
             Fruits = Fruits + 1;
-            ///Col.gameObject.SetActive(false);
+            ScoreManager.instance.AddFruit();
             Destroy(Col.gameObject);
            
         }
 
-        if(Fruits >= 1)
+        if(Fruits >= 14)
         {
             SecondDoor.gameObject.SetActive(true);
             FirstDoor.gameObject.SetActive(false);

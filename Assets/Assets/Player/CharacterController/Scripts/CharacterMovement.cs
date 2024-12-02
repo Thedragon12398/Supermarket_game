@@ -7,7 +7,7 @@ public class CharacterMovement : MonoBehaviour
 {
     public Camera playerCamera;
     public float walkSpeed = 6f;
-    static public float runSpeed = 12f;
+    public float runSpeed = 12f;
     public float jumpPower = 7f;
     public float gravity = 10f;
     public float lookSpeed = 2f;
